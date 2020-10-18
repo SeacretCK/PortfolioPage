@@ -5,15 +5,15 @@ $(document).ready(function () {
   });
 
   //SCROLL 60px ABOVE SECTION BECAUSE OF FIXED NAVBAR
-  // function goToByScroll(id) {
-  //   id = id + "-section";
-  //   $(window).scrollTop($("#" + id).offset().top - 60);
-  // }
+  function goToByScroll(id) {
+    id = id + "-section";
+    $(window).scrollTop($("#" + id).offset().top - 60);
+  }
 
-  // $(".nav-link").click(function (e) {
-  //   e.preventDefault(); // preventing the default scrolling behavior
-  //   goToByScroll(this.id);
-  // });
+  $(".nav-link").click(function (e) {
+    e.preventDefault(); // preventing the default scrolling behavior
+    goToByScroll(this.id);
+  });
 
   // MARK THE CURRENT SECTION AS ACTIVE
   $.fn.checkViewport = function () {
