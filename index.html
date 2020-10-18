@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Portfolio Page</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar sticky-top navbar-expand-md navbar-dark bg-dark position-fixed w-100"
+    >
+      <a class="navbar-brand" href="#home-section">
+        <span>Portfolio</span> Claudia Kronmarck
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <!-- Projects as a dropdown for md and larger -->
+          <div class="dropdown show d-none d-md-block">
+            <a
+              class="dropdown-toggle nav-link portfolio"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Projects
+            </a>
+            <div
+              class="dropdown-menu bg-dark"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <a
+                class="nav-link text-left dropdown-item project-1"
+                id="project-1"
+                href="#project-1-section"
+                >Project: ShoppingList</a
+              >
+              <a
+                class="nav-link text-left dropdown-item project-2"
+                id="project-2"
+                href="#project-2-section"
+                >Project: BookFriends</a
+              >
+              <a
+                class="nav-link text-left dropdown-item project-3"
+                id="project-3"
+                href="#project-3-section"
+                >Project: Trainingsplan</a
+              >
+            </div>
+          </div>
+          <!-- Projects as links for hamburger menu -->
+          <div class="d-md-none">
+            <a
+              class="nav-link text-center project-1"
+              id="project-1"
+              href="#project-1-section"
+              >Project: ShoppingList</a
+            >
+            <a
+              class="nav-link text-center project-2"
+              id="project-2"
+              href="#project-2-section"
+              >Project: BookFriends</a
+            >
+            <a
+              class="nav-link text-center project-3"
+              id="project-3"
+              href="#project-3-section"
+              >Project: Trainingsplan</a
+            >
+          </div>
+          <a
+            class="nav-link text-center contact"
+            id="contact"
+            href="#contact-section"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="section" id="home-section" name="home-section">
+      <div class="container home-container">
+        <div class="home-firstname">Claudia</div>
+        <div class="home-lastname">Kronmarck</div>
+        <div class="home-portfolio">Portfolio</div>
+        <div class="home-webdevelopment">{{ WebDevelopment }}</div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio-section" name="portfolio-section">
+      <div class="container">
+        <!-- Project Shoppinglist -->
+        <div class="card m-2 mb-5 section" id="project-1-section">
+          <div class="row no-gutters">
+            <div class="col-md-6 image-container">
+              <img
+                src="images/Mockup-1.jpg"
+                class="card-img"
+                alt="Example-Picture"
+              />
+            </div>
+            <div class="col-md-6 card-container">
+              <div class="card-body">
+                <h3 class="card-title">1. Shoppinglist</h3>
+                <p class="card-text">
+                  My first Vue App, using Vue Router and Components. You can
+                  add, delete and edit the items on your shopping list. The
+                  SimpleNotes feature lets you save, edit and delete memos. The
+                  data gets stored in local storage with the prefix
+                  "shoppinglist" or "notes". A unique ID is created with uuidv4.
+                  A registered service worker makes offline use possible.
+                </p>
+                <div class="icons">
+                  <img src="images/logo_html5.svg" alt="Html 5" />
+                  <img src="images/logo_sass.svg" alt="Sass" />
+                  <img src="images/logo_javascript.svg" alt="JavaScript" />
+                  <img src="images/logo_vue.svg" alt="Vue" />
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <div class="row no-gutters justify-content-between">
+                  <div class="col-5 link-container">
+                    <a
+                      target="_blank"
+                      href="https://shoppinglist-f6cad.firebaseapp.com/"
+                      >View Website</a
+                    >
+                  </div>
+                  <div class="col-5 link-container">
+                    <a
+                      target="_blank"
+                      href="https://github.com/SeacretCK/Vue-ShoppingList"
+                      >View Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Bookfriends-->
+        <div class="card m-2 mb-5 section" id="project-2-section">
+          <div class="row no-gutters">
+            <div class="col-md-6 image-container order-md-2">
+              <img
+                src="images/Mockup-2.jpg"
+                class="card-img"
+                alt="Example-Picture"
+              />
+              <img
+                src="images/Mockup-3.jpg"
+                class="card-img"
+                alt="Example-Picture"
+              />
+            </div>
+            <div class="col-md-6 card-container order-md-1">
+              <div class="card-body">
+                <h3 class="card-title">2. Bookfriends</h3>
+                <p class="card-text">
+                  My first really complex Vue App, using Vue Router, Vuex,
+                  Vue-Draggable, Vue-Select, Vue-Toastify, Moment as well as
+                  Firebase Authentication and Firebase Firestore. The styling is
+                  done with Sass.
+                  <br />
+                  The site uses the GoogleBooks API. You can search for books
+                  with a simple or an advanced search. You can create booklists
+                  and add books to them. You can comment, delete and sort the
+                  books in your lists. Each user has a dashboard and a profile,
+                  where they can add some information about themselves. As
+                  Firebase offers the possibility to listen for realtime updates
+                  in the database, there's also the feature of a live chat. Your
+                  dashboard lists your conversations with other users and
+                  notifies you about new messages in realtime.
+                </p>
+                <div class="icons">
+                  <img src="images/logo_html5.svg" alt="Html 5" />
+                  <img src="images/logo_sass.svg" alt="Sass" />
+                  <img src="images/logo_javascript.svg" alt="JavaScript" />
+                  <img src="images/logo_vue.svg" alt="Vue" />
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="row no-gutters justify-content-between">
+                  <div class="col-5 link-container">
+                    <a target="_blank" href="https://bookfriends-8ad5b.web.app/"
+                      >View Website</a
+                    >
+                  </div>
+                  <div class="col-5 link-container">
+                    <a
+                      target="_blank"
+                      href="https://github.com/SeacretCK/BookFriends"
+                      >View Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Trainingsplan-->
+        <div class="card m-2 mb-5 section" id="project-3-section">
+          <div class="row no-gutters">
+            <div class="col-md-6 image-container">
+              <img
+                src="images/Mockup-4.jpg"
+                class="card-img"
+                alt="Example-Picture"
+              />
+              <img
+                src="images/Mockup-5.jpg"
+                class="card-img"
+                alt="Example-Picture"
+              />
+            </div>
+            <div class="col-md-6 card-container">
+              <div class="card-body">
+                <h3 class="card-title">3. Trainingsplan</h3>
+                <p class="card-text">
+                  This is my first full stack MEVN App. Besides MongoDB,
+                  Express, Vue and Node it's using Mongoose, Axios, Moment and
+                  Vue-Toasted. The styling is done with CSS and with mobile
+                  usage in mind. This app is meant to be used during your
+                  workout at the gym, where you can record your progress for
+                  each exercise you do. When you open up one exercise it shows
+                  you the details of your last session. So when you don't change
+                  the weight or repetitions you can just hit save and it stores
+                  the data anew with the current date. You can look at the
+                  statistics of each exercise to track your progress.
+                </p>
+                <div class="icons">
+                  <img src="images/logo_html5.svg" alt="Html 5" />
+                  <img src="images/Logo_css3.svg" alt="Css" />
+                  <img src="images/logo_javascript.svg" alt="JavaScript" />
+                  <img src="images/logo_vue.svg" alt="Vue" />
+                  <img src="images/logo_nodejs.svg" alt="Node" />
+                  <img src="images/logo_mongodb.svg" alt="MongoDB" />
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <div class="row no-gutters justify-content-between">
+                  <div class="col-5 link-container">
+                    <a
+                      target="_blank"
+                      href="https://trainingsplan-zero.glitch.me/"
+                      >View Website</a
+                    >
+                  </div>
+                  <div class="col-5 link-container">
+                    <a
+                      target="_blank"
+                      href="https://github.com/SeacretCK/Trainingsplan"
+                      >View Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+    </section>
+
+    <section class="section" id="contact-section">
+      <div class="container">
+        <div class="contact-info">
+          <h2>Contact me:</h2>
+          <p>claudia.kronmarck@gmx.de</p>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
